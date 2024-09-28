@@ -5,16 +5,16 @@
 | cart.items_count | int     |                                 |
 | cart.total       | string  | Formatted total ex: "١٠٠ ر.س"   |
 #}
-<header class="store-header">
+{# <header class="store-header">
   <div class="top-navbar">
     <div class="container">
       <div class="right-side grow">
-        {% component 'footer.contacts' with {is_header:true}%}
+          {% component 'footer.contacts' with {is_header:true}%}
       </div>
     </div>
   </div>
 </header>
-
+ #}
 
 
 {% set important_links = theme.settings.get('important_links') %}
@@ -24,16 +24,14 @@
     <div class="container flex justify-between">
       <div class="flex-1 flex items-center gap-2">
           {# Footer Menu #}
-          {% if important_links %}
             <salla-menu source="footer" topnav></salla-menu>
-          {% endif %}
 
           {# Language & Currency Component #}
           <div class="header-buttons">
               {% if store.settings.is_multilingual or store.settings.currencies_enabled %}
-                  <button type="button" onclick="salla.event.dispatch('localization::open')" class="btn--rounded-gray basis-0">
-                      <span class="flag iti__flag iti__{{ user.language.country_code }} rounded-sm"></span>
-                      <span class="mx-1.5">|</span> <span>{{ currency.symbol }}</span>
+                  <button type="button" onclick="salla.event.dispatch('localization::open')" class="basis-0">
+                      <i class="sicon-earth"></i>
+                      <span class="p-px">{{ user.language.name }}</span>
                   </button>
                   <salla-localization-modal></salla-localization-modal>
               {% endif %}
@@ -48,9 +46,9 @@
           {% endif %}
 
           {# Search bar #}
-          <div class="header-search flex-1">
+          {# <div class="header-search flex-1">
             <salla-search inline oval height="36"></salla-search>
-          </div>
+          </div> #}
       </div>
 
       <salla-contacts is-header></salla-contacts>
