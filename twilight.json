@@ -812,7 +812,20 @@
             "title": "Lavern Banner",
             "icon": "sicon-store",
             "path": "home.banner",
-            "fields": []
+            "fields": [
+                {
+                    "id": "image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Image",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
