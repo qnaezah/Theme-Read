@@ -818,21 +818,24 @@
                     "type": "static",
                     "format": "title",
                     "label": "عنوان",
-                    "value": null,
-                    "variant": "h1",
+                    "value": "عروض يوم التأسيس",
+                    "variant": "h2",
                     "icon": "sicon-format-text"
                 },
                 {
-                    "id": "image",
+                    "id": "video_url",
                     "type": "string",
-                    "format": "image",
-                    "label": "الفديو/الصورة",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفديو",
                     "description": null,
                     "labelHTML": null,
-                    "placeholder": "e.g. https://hostname.com/image.png",
-                    "icon": "sicon-image",
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
                     "value": null,
-                    "required": false
+                    "required": true,
+                    "minLength": 6,
+                    "maxLength": 30
                 }
             ]
         }
