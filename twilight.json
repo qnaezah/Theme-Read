@@ -814,22 +814,22 @@
             "path": "home.banner",
             "fields": [
                 {
-                    "id": "string",
+                    "id": "banner_title",
                     "type": "string",
                     "format": "text",
-                    "label": "String",
-                    "description": null,
+                    "label": "العنوان",
+                    "description": "عروض يوم التأسيس",
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": "عروض يوم التأسيس",
+                    "value": null,
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": "50"
                 },
                 {
-                    "id": "video_url",
+                    "id": "banner_video_url",
                     "type": "string",
                     "format": "url",
                     "inputType": "url",
