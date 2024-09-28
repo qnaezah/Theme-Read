@@ -814,13 +814,19 @@
             "path": "home.banner",
             "fields": [
                 {
-                    "id": "aanoan",
-                    "type": "static",
-                    "format": "title",
-                    "label": "عنوان",
+                    "id": "string",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
                     "value": "عروض يوم التأسيس",
-                    "variant": "h2",
-                    "icon": "sicon-format-text"
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
                 },
                 {
                     "id": "video_url",
@@ -835,7 +841,7 @@
                     "value": null,
                     "required": true,
                     "minLength": 6,
-                    "maxLength": 30
+                    "maxLength": "120"
                 }
             ]
         }
