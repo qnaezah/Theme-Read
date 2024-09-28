@@ -814,10 +814,19 @@
             "path": "home.banner",
             "fields": [
                 {
+                    "id": "aanoan",
+                    "type": "static",
+                    "format": "title",
+                    "label": "عنوان",
+                    "value": null,
+                    "variant": "h1",
+                    "icon": "sicon-format-text"
+                },
+                {
                     "id": "image",
                     "type": "string",
                     "format": "image",
-                    "label": "Image",
+                    "label": "الفديو/الصورة",
                     "description": null,
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
