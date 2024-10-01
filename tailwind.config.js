@@ -51,6 +51,9 @@ module.exports = {
                 'tiny' : '3px',
                 DEFAULT: '.75rem',
             },
+            borderWidth:{
+                '1': '1px',
+            },
             fontSize           : {
                 'icon-lg'   : '33px',
                 'xxs'       : '10px',

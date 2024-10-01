@@ -1,6 +1,9 @@
-<section class="s-block s-block--defult-home-slider s-block--full-bg">
-    <div>
+<section class="bg-cover bg-center">
+    <div class="adv-banner">
         <h2>{{component.banner_title}}<h2>
-        <iframe class="w-full aspect-video md:aspect-square" src="{{component.banner_video_url}}"></iframe>
+        <video autoplay loop muted plays-inline class="bg-auto lg:bg-contain">
+            <source src="{{component.banner_video_url}}" type="video/mp4"></source>
+        </video>
+    
     </div>
 </section>
