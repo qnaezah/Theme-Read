@@ -91,6 +91,7 @@ module.exports = {
                 'full-banner'   : '600px',
                 '500'           : '500px',
                 '460'           : '460px',
+                '80vh'          : '80vh',
             },
             minWidth           : {
                 '1/4': '25%',

@@ -1,4 +1,4 @@
-<section class="bg-cover bg-center">
+{# <section class="bg-cover bg-center">
     <div class="adv-banner">
         <h2>{{component.banner_title}}<h2>
         <video autoplay loop muted plays-inline class="bg-auto lg:bg-contain">
@@ -6,4 +6,21 @@
         </video>
     
     </div>
+</section> #}
+
+<section class="advanced-slider with-spinner h-80vh advanced-slider--0" style="--mobileSliderHeight: 80vh;">
+  <div id="advanced-slider-0" class="s-slider-wrapper s-slider-has-notitle s-slider-v-centered s-slider-horizontal" dir="rtl">
+    <div class="swiper s-slider-container swiper-fade swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress swiper-backface-hidden" dir="rtl">
+      <div class="swiper-wrapper s-slider-swiper-wrapper" style="transition-duration: 0ms;">
+        
+        <!-- الشريحة الأولى -->
+        <div class="advanced-slider__slide relative swiper-slide opacity-100 w-full">
+          <video playsinline class="object-cover object-center w-full h-80vh" loop autoplay muted src="{{component.banner_video_url}}"></video>
+        </div>
+
+        <!-- يمكنك تكرار الشريحة حسب الحاجة -->
+
+      </div>
+    </div>
+  </div>
 </section>
